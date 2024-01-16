@@ -1,0 +1,138 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+}
+
+
+  .alltimer {
+    display: flex;
+    gap: 20px;
+
+  }
+  
+  .timer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    width: 400px; /* Occupy full width */
+    border-radius: 30px;
+    background-color: #010710;
+  }
+  @media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .timer-column 
+    .timerdisplay{
+      width: 250px;
+    }
+    .alltimer {
+      flex-direction: row;
+  }
+    .tasklist-column {
+      width: 250px;
+    } 
+  }
+
+
+  .timerdisplay {
+ /* Change from absolute to relative */
+    display: flex;
+    width: 400px; /* Occupy full width */
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: #0066b4;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 20px;
+    height: 20px;
+    background-color: #07101c5d;
+  }
+  .timer2display {
+    display: flex;
+    width: 100%; /* Occupy full width */
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: #0066b4;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: -70px;
+    border-radius: 20px;
+    height: 20px;
+    background-color: #07101c5d;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .timer-column,
+    .tasklist-column {
+      width: 100%; 
+      width: 250px;/* Adjust for smaller screens */
+    }
+  
+    .timer2display {
+      bottom: unset; /* Remove bottom positioning */
+    }
+
+    .alltimer {
+      flex-direction: column;    }
+
+  }
+  
+  .tasklist-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align to the start (left) */
+    width: 100%; /* Occupy full width */
+  }
+  
+  .time {
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  /* Add any additional styling as needed */
+  
+  /* Add any additional styling as needed */
+  
+.rounded-bar {
+  width: 50px;
+  margin: 20px auto; /* Center horizontally with auto margin */
+  height: 6px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Initial color */
+  transition: background-color 3s ease; /* Transition effect */
+  box-shadow: 0px 4px 3px #4d4f5000;
+}
+@font-face {
+  font-family: 'couture';
+  src: url(/src/Fonts/couture.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Yapari';
+  src: url(/src/Fonts/Yapari.ttf) format('truetype');
+}
+.my-element {
+  font-family: 'couture';
+}
+.taskname {
+  font-family: 'Yapari';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0066b4;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 20px;
+  width: auto;
+  height: 20px;
+  background-color: #0107102a;
+}

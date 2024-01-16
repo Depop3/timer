@@ -1,0 +1,148 @@
+.list-container {
+  width: 400px;
+  height: 440px;
+  border-radius: 30px;
+  background-color: #010710;
+}
+@media only screen and (max-width: 768px) {
+  .list-container {
+    width:100%;
+
+  }
+}
+.tasklist-header {
+  position: relative;
+  display: flex;
+}
+.tasklistname {
+  position: absolute;
+  left: 10px; /* Adjust the left position as needed */
+  margin-bottom: 60px;
+  width: 130px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  padding: 10px;
+  color: #0066b4;
+  border-radius: 18px;
+  background-color: #010b19;
+}
+.list-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.tasklist-content {
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.task-container {
+  font-family:sans-serif;
+  margin-top: 20px;
+  max-height: 50px; /* Set a fixed height as per your preference */
+  width: 100%; /* Use full width of the parent container */
+  max-width: 400px; /* Optionally, set a maximum width to avoid excessive width */
+  display: flex;
+  background-color:  #010b19;
+  flex-direction: column;
+  margin-left: -10px;
+  border-radius: 14px;
+  box-sizing: border-box; /* Include padding and border in the total height */
+}
+
+.task-name {
+
+  margin-left: 10px;
+  text-align: center;
+}
+.task-time {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.due-date-time {
+  margin-left: 10px;
+  gap: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  color: #0066b4;
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+.due-date,
+.due-time {
+  margin-bottom: 1px;
+  font-size: 10px;
+}
+
+.task-time > :last-child {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px; /* Adjust the font size as needed for "mins" */
+}
+
+.taskdets {
+  font-size: medium;
+  text-transform: capitalize;
+  display:flex ;
+  flex-direction: row;
+  justify-content:space-between ;
+  align-items: center;
+  gap: 10px;
+}
+.taskbutton {
+  padding: 7px;
+  margin-left: auto; /* Align the button to the right */
+  border: none;
+  border-radius: 30px;
+  color: #0066b4;
+  background-color: #010b19;
+}
+
+.no-timer-container {
+  margin-bottom: -290px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 40px; 
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-timer-text {
+  font-family:sans-serif;
+  letter-spacing: 2px;
+  color: #0066b4;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: -10px; /* Add spacing between text and arrow */
+}
+
+
+.arrow-icon {
+  transform: rotate(-90deg);
+  animation: moveArrow 1.5s ease-in-out infinite; /* Add animation for moving arrow */
+}
+
+@keyframes moveArrow {
+  0% { transform: rotate(-90deg); } /* Start at -90 degrees */
+  50% { transform: rotate(0deg); } /* Move to 0 degrees at 50% of the animation */
+  100% { transform: rotate(-90deg); } /* Return to -90 degrees at the end */
+}
+

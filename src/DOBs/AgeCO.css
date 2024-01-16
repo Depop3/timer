@@ -1,0 +1,110 @@
+.age-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 120px;
+    background-color: #010710;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    padding: 2px;
+}
+  
+  .age-container.expanded {
+    width: 300px;
+    height: 240px;
+    transition: all 0.3s ease-in-out;/* Added transition for expansion */
+  }
+  .ageheader {
+    display: flex;
+  }
+  @media (max-width: 768px) {
+    .ageheader {
+      max-width: 250px;
+    }
+    .age-container.expanded{
+      height: 250px;
+    }
+    .add-age-text {
+      font-size: 15px;
+    }
+    .age-text {
+      font-size: larger;
+    }
+    .age-container {
+      max-width: 250px;
+    }
+  }
+
+
+  /* Additional styles for expanded form */
+  .expanded form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease-in-out; /* Added transition for form elements */
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out; /* Added transition for input container */
+  }
+  
+  .close-button {
+    position: relative;
+    margin-bottom:-13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    border: none;
+    width:20%;
+    border-radius: 30px;
+    color: #0d47a1;
+    background-color: #0b7dda;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out; /* Added transition for close button */
+  }
+  .close-button:hover {
+    background-color: #091c2c;
+  }
+  .submit-button {
+    cursor: pointer;
+    margin-bottom: 13px;
+    transition: all 0.8s ease-in-out; /* Added transition for submit button */
+  }
+  
+  .age-text {
+    padding: 6px;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out; /* Added transition for age text */
+  }
+  
+  .p {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    transition: all 0.3s ease-in-out; /* Added transition for paragraph */
+  }
+  .add-age-text {
+    font-size: 30px;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  .question{
+    padding: 7px;
+    font-size: 30px;
+    text-align: left;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  .ager {
+    font-size: 18px;
+    text-align: left;
+    color: #001c5d;
+    transition: all 0.3s ease-in-out;
+  }
